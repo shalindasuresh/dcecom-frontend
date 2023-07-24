@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,39 +41,80 @@
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 20px;
 }
 
-.product {
+.product-item {
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
 }
 
-.product img {
-  width: 100%;
+.product-item img {
+  /* width: 100%; */
   height: 150px;
   object-fit: cover;
 }
 
-.product h3 {
+.product-item h3 {
   margin-top: 10px;
 }
 
-.product p {
+.product-item p {
   font-size: 14px;
 }
 
 
 
-.product-list {
+
+
+header {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
+  color: white;
 }
 
-.product-item {
-  flex-basis: 25%; /* Each item will take up 25% of the container width */
-  padding: 10px;
-  border: 1px solid #ccc;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.login-button {
+  margin-left: 20px;
+}
+
+.login-button button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-button button:hover {
+  background-color: #444;
 }

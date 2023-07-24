@@ -1,16 +1,18 @@
-
-import './App.css';
-import ProductList from './components/ProductList';
 import React from 'react';
-import MetaMaskLogin from './components/MetaMaskLogin';
+import './App.css';
+import Header from './components/templates/Header';
+
+import ProductList from './components/ProductList';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <MetaMaskLogin></MetaMaskLogin>
-        <ProductList></ProductList>
-      </header>
+      <Header></Header>
+
+    
+      <ProductList></ProductList>
     </div>
   );
 }
