@@ -1,6 +1,5 @@
-// components/Product.js
-
 import React from 'react';
+import BuyButton from './templates/buttons/BuyButton';
 
 const Product = ({ product }) => {
   return (
@@ -10,6 +9,7 @@ const Product = ({ product }) => {
       <h3>{product.name}</h3>
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
+      <BuyButton></BuyButton>
     </div>
     </div>
   );

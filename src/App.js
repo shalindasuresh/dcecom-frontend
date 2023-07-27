@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './components/templates/Header';
 
-import ProductList from './components/ProductList';
+import Header from './components/templates/Header';
 
 
 
@@ -11,8 +10,7 @@ function App() {
     <div className="App">
       <Header></Header>
 
-    
-      <ProductList></ProductList>
+      
     </div>
   );
 }
